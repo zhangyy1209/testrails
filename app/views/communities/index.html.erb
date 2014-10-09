@@ -1,4 +1,4 @@
-<h1>Listing communities</h1>
+<h1>Listing cool communities</h1>
 
 <table>
   <thead>
@@ -10,12 +10,24 @@
 
   <tbody>
     <% @communities.each do |community| %>
-      <tr>
+<!--      <tr>
         <td><%= community.name %></td>
         <td><%= link_to 'Show', community %></td>
         <td><%= link_to 'Edit', edit_community_path(community) %></td>
         <td><%= link_to 'Destroy', community, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+	</tr>
+//-->
+<tr>
+	<td> <%= community.name %> </td>
+	<td>
+	<div class="btn-group">
+	<button type="button" class="btn btn-default"><%= link_to 'Show', community %></button>
+	<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_community_path(community) %></button>
+	<button type="button" class="btn btn-default"><%= link_to 'Destory', community, method: :delete, data: { confirm: 'Are you sure?'}%></button>
+</div>
+</td>
+</tr>
+
     <% end %>
   </tbody>
 </table>

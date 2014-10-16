@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @community.name %>
+<strong><h3>Name:<h3></strong>
+<h4><%= @community.name %><h4>
 </p>
 
-<%= link_to 'Edit', edit_community_path(@community) %> |
-<%= link_to 'Back', communities_path %>
+<button type="button" class="btn btn-primay"><%= link_to 'Edit', edit_community_path(@community) %></button> |
+<button type="button" class="btn btn-default"><%= link_to 'Back', communities_path %></button>

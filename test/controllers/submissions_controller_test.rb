@@ -18,7 +18,7 @@ class SubmissionsControllerTest < ActionController::TestCase
 
   test "should create submission" do
     assert_difference('Submission.count') do
-      post :create, submission: { community: @submission.community, title: @submission.title, url: @submission.url }
+      post :create, submission: { community_id: @submission.community, title: @submission.title, url: @submission.url }
     end
 
     assert_redirected_to submission_path(assigns(:submission))

@@ -2,10 +2,10 @@
 
 one:
   title: MyString
-  url: MyString
-  community: 
+  url: http://test.com
+  community: one 
 
 two:
   title: MyString
-  url: MyString
-  community: 
+  url: http://one.com
+  community: two
